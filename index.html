@@ -3,107 +3,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fundación Luz Arte y Vida</title><style>
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#0b0b0b;
-  color:white;
-}
-header{
-  background:#000;
-  padding:20px;
-  text-align:center;
-}
-nav{
-  background:#ff3c00;
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  padding:10px;
-}
-nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-}
-.hero{
-  position:relative;
-  height:90vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  overflow:hidden;
-}
-.hero video{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  z-index:-1;
-}
-.hero::after{
-  content:"";
-  position:absolute;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.6);
-  top:0;
-  left:0;
-}
-.hero-content{
-  position:relative;
-  z-index:2;
-}
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:15px 25px;
-  background:#25D366;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
-}
-section{
-  padding:60px 20px;
-  max-width:1000px;
-  margin:auto;
-}
-h2{
-  color:#ff3c00;
-  text-align:center;
-}
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-.card{
-  background:#111;
-  padding:20px;
-  border-radius:10px;
-}
-footer{
-  text-align:center;
-  padding:30px;
-  background:#000;
-}
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  padding:15px;
-  border-radius:50%;
-  text-decoration:none;
-  color:white;
-  font-size:20px;
-}
+body{margin:0;font-family:Arial;background:#0b0b0b;color:white;}
+header{background:#000;padding:15px;text-align:center;}
+header img{height:60px;}
+nav{background:#ff3c00;display:flex;justify-content:center;gap:20px;padding:10px;}
+nav a{color:white;text-decoration:none;font-weight:bold;}
+.hero{position:relative;height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;}
+.hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;}
+.hero::after{content:"";position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.6);top:0;left:0;}
+.hero-content{position:relative;z-index:2;}
+.btn{display:inline-block;margin-top:20px;padding:15px 25px;background:#25D366;color:white;text-decoration:none;border-radius:5px;}
+section{padding:60px 20px;max-width:1000px;margin:auto;}
+h2{color:#ff3c00;text-align:center;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{background:#111;padding:20px;border-radius:10px;}
+footer{text-align:center;padding:30px;background:#000;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;padding:15px;border-radius:50%;text-decoration:none;color:white;font-size:20px;}
 </style></head><body><header>
-<h1>Fundación Luz Arte y Vida</h1>
-<p>Educación, arte y fe para transformar vidas</p>
+<img src="logo.png" alt="logo">
+<p>Fundación Luz Arte y Vida</p>
 </header><nav>
 <a href="#mision">Misión</a>
 <a href="#vision">Visión</a>
@@ -111,8 +29,8 @@ footer{
 <a href="#valores">Valores</a>
 <a href="#contacto">Contacto</a>
 </nav><section class="hero">
-<video autoplay muted loop>
-  <source src="video.mp4" type="video/mp4">
+<video autoplay muted loop playsinline>
+  <source src="./video.mp4" type="video/mp4">
 </video>
 <div class="hero-content">
 <h2>Valida tu Bachillerato</h2>
@@ -121,23 +39,17 @@ footer{
 </div>
 </section><section id="mision">
 <h2>Misión</h2>
-<p>
-Llevar el mensaje de Jesús a través del arte, brindar un espacio seguro y acogedor para jóvenes donde desarrollen sus talentos en teatro, danza, música, dibujo y más.
-</p>
+<p>Llevar el mensaje de Jesús a través del arte, brindando un espacio seguro para jóvenes.</p>
 </section><section id="vision">
 <h2>Visión</h2>
-<p>
-Ser un referente en artes creativas, formando jóvenes como agentes de cambio.
-</p>
+<p>Ser un referente en artes creativas y formación de jóvenes.</p>
 </section><section id="objetivos">
 <h2>Objetivos</h2>
 <div class="cards">
-<div class="card">Talleres artísticos de calidad</div>
-<div class="card">Eventos y presentaciones</div>
-<div class="card">Alianzas estratégicas</div>
-<div class="card">Apoyo emocional y espiritual</div>
-<div class="card">Transformación social</div>
-<div class="card">Proyectos comunitarios</div>
+<div class="card">Talleres artísticos</div>
+<div class="card">Eventos</div>
+<div class="card">Alianzas</div>
+<div class="card">Apoyo emocional</div>
 </div>
 </section><section id="valores">
 <h2>Valores</h2>
@@ -145,14 +57,12 @@ Ser un referente en artes creativas, formando jóvenes como agentes de cambio.
 <div class="card">Amor</div>
 <div class="card">Servicio</div>
 <div class="card">Respeto</div>
-<div class="card">Honestidad</div>
 <div class="card">Fe</div>
-<div class="card">Unidad</div>
 </div>
 </section><section id="contacto">
-<h2>Contáctanos</h2>
+<h2>Contacto</h2>
 <p>📧 larevo2022@gmail.com</p>
-<p>📞 3209713608 - 322481800</p>
+<p>📞 3209713608</p>
 <a href="https://wa.me/573209713608" class="btn">WhatsApp</a>
 </section><footer>
 <p>© Fundación Luz Arte y Vida</p>
